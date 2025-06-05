@@ -1,0 +1,25 @@
+{
+  "name": "personal-management-assistant-electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.personalmanagementassistant",
+    "productName": "Personal Management Assistant",
+    "win": {
+      "target": "nsis",
+      "icon": "../frontend/public/icon.ico"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.1"
+  }
+}
