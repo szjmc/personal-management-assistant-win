@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans text-gray-800 antialiased;
+}
+
+/* 卡片样式 */
+.task-card {
+  @apply bg-white rounded shadow hover:bg-gray-100 transition duration-200;
+}
+
+/* 按钮样式 */
+.primary-button {
+  @apply bg-blue-600 text-white rounded px-4 py-2;
+}
+
+.primary-button:hover {
+  @apply bg-blue-700;
+}
+
+/* 进度条样式 */
+.progress-bar {
+  @apply h-2 rounded;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background-color: #FDE68A;
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: #FACC15;
+}

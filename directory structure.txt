@@ -1,0 +1,31 @@
+personal-management-assistant/
+├── backend/                # Node.js + Express 后端
+│   ├── server.js             # 主服务入口
+│   ├── db.js                 # SQLite 初始化
+│   ├── auth.js               # JWT 认证中间件
+│   └── routes/               # API 路由模块
+│       ├── tasks.js
+│       ├── notes.js
+│       ├── schedule.js
+│       ├── questions.js
+│       ├── words.js
+│       └── auth.js
+│
+├── frontend/                 # React + Vite 前端
+│   ├── src/
+│   │   ├── App.jsx           # 核心页面组件
+│   │   ├── main.jsx          # 入口文件
+│   │   ├── components/       # 所有模块组件
+│   │   ├── hooks/            # 自定义 Hook
+│   │   ├── api/              # API 请求封装
+│   │   └── styles/           # TailwindCSS 配置
+│   └── index.html
+│
+├── electron/                 # Electron 桌面应用打包配置
+│   ├── main.js               # 主进程逻辑
+│   ├── preload.js            # 预加载脚本
+│   └── package.json          # Electron 应用配置
+│
+├── database.db               # SQLite 数据库文件（初始空）
+├── .env                      # 环境变量配置
+└── README.md                 # 使用说明文档
